@@ -26,10 +26,7 @@ def move(board, index, player)
 end
 
 def position_taken?(board, position)
-  if board[position] == " "
-    return false
-  end
-  return true
+  board[position] != " "
 end
 
 def valid_move?(board, position)
